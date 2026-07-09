@@ -5,7 +5,7 @@ import time
 
 # --- INITIALIZATION ---
 # Initialize the Groq Client
-client = Groq(api_key="GROQ_API_KEY")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # --- CORE AI FUNCTION ---
 def categorize_product(messy_name, allowed_categories):
